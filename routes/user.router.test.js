@@ -8,6 +8,7 @@ import {
 	clearCollection,
 } from "../utils/db.utils.js";
 import { app } from "../server.js";
+import mongoose from "mongoose";
 
 const request = supertest(app);
 
@@ -125,8 +126,10 @@ describe("Articles routes", () => {
 		});
 
 		it("Should return 404 if the article does not exist", async () => {
+			const randomMongoId = new mongoose.Types.ObjectId();
+
 			const response = await request
-				.delete("/articles/67058b48e31c85284a413289")
+				.delete(`/articles/${randomMongoId}`)
 				.set(headers);
 
 			expect(response.status).to.equal(404);

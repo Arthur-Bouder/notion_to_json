@@ -13,7 +13,9 @@ app.use(express.json());
 app.use("/users", userRouter);
 app.use("/articles", articleRouter);
 
+// Protect further routes with authMiddleware
 app.use(authMiddleware);
+
 app.use("/comments", commentRouter);
 
 const PORT = 3000;

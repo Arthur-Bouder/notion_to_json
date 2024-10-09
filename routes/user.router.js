@@ -13,6 +13,7 @@ const router = express.Router();
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 
+// Protect further routes with authMiddleware
 router.use(authMiddleware);
 
 router.get("/:id", getUser);

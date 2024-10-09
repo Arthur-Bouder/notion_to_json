@@ -14,6 +14,7 @@ const router = express.Router();
 router.get("/", getArticles);
 router.get("/:id", getArticle);
 
+// Protect further routes with authMiddleware
 router.use(authMiddleware);
 
 router.post("/", createArticle);

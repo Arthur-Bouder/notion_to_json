@@ -1,0 +1,23 @@
+{
+  "title": "Tier list des meilleurs cookies de Tours",
+  "parts": [
+    {
+      "type": "metadata",
+      "title": "les-meilleurs-cookies-de-tours",
+      "description": "Tier list exhaustive des cookies de Tours, qui valent le détour"
+    },
+    {
+      "type": "header",
+      "title": "Quels sont les meilleurs cookies de Tours ? La liste objective"
+    },
+    {
+      "type": "title_with_text",
+      "title": "Un travail de recherches approfondies",
+      "description": "J’ai pris sur moi pour aller tester tous les cookies de Tours: voilà ce qu’il en ressort."
+    },
+    {
+      "type": "description",
+      "description": "Il est venu le temps des cookies"
+    }
+  ]
+}
